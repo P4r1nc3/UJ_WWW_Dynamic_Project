@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*============================== base styling ==============================*/
+:root {
+  --clr-primary: #8612ef;
+  --clr-light-sky: #90c0e8;
+  --clr-light-green: #6fc2c5;
+
+  --clr-dark-green: #55bc79;
+
+  --clr-black: #1c1c1c;
+  --clr-black-80: #2f2f2f;
+  --clr-black-60: #282828;
+
+  --clr-white: #ffffff;
+  --clr-white-80: #f1f1f1;
+  --clr-white-60: #e1e1e1;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;;
+  position: relative;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1280px;
+  max-width: 95%;
+}
+
+.btn {
+  outline: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--clr-white);
+  background-color: var(--clr-dark-green);
+  border: 2px solid var(--clr-dark-green);
+  border-radius: 5px;
+  transition-duration: .3s;
+  transition-property: background-color;
+}
+
+.btn a {
+  font-weight: 500;
+  color: var(--clr-white);
+}
+
+.btn:hover {
+  background-color: var(--clr-primary);
+  border: 2px solid var(--clr-primary);
+}
+
+.hero .left .cta .line {
+  background-color: transparent;
+  border: 2px solid var(--clr-dark-green);
+}
+
+.hero .left .cta .line a {
+  color: #55bc79;
+  text-decoration: none;
+}
+
+.hero .left .cta .line:hover {
+  background-color: var(--clr-dark-purple);
+  border: 2px solid var(--clr-dark-green);
+}
+
+/*============================== hero style  ==============================*/
+.hero {
+  padding: 110px 0 50px;
+  display: flex;
+}
+
+.hero .container {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+}
+
+.hero .container p{
+  max-width: 550px;
+}
+
+.hero .right {
+  width: 300px;
+  height: 300px;
+  max-width: 100%;
+  position: relative;
+}
+
+.hero .right img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  animation: animateHero 4s linear infinite;
+}
+
+@keyframes animateHero {
+  50% {
+    top: -20px;
+  }
+}
+
+.hero .right .top {
+  font-size: 1.1rem;
+  color: var(--clr-white)
+}
+
+.hero .left .title {
+  font-size: calc(1.5rem + 2vw);
+  margin: 16px 0 24px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.hero .left .title span {
+  color: var(--clr-primary);
+}
+
+.hero .left .desc {
+  max-width: 380px;
+}
+
+.hero .left .cta .fill {
+  margin-right: 32px;
+  background-color: #55bc79;
+  border: none;
+}
+
+.hero .left .cta .fill a{
+  text-decoration: none;  
+}
+
+.hero .left .cta .fill a:hover{
+  color: white;
+}
+
+.hero .left .cta .fill:hover {
+  border: none;
+}
+
+@media screen and (min-width: 850px) {
+  .hero {
+    height: 100vh;
+    padding: 0;
+  }
+
+  .hero .container {
+    gap: 0;
+    flex-direction: row;
+  }
+
+  .hero .right {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.hero .left .description {
+  font-size: 30px;
+}
+
+.hero .left .top {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: left;
+}
+
+.hero .left .title {
+  font-size: 50px;
+}
+
+.hero .left .logo {
+  font-size: 50px;
+}
