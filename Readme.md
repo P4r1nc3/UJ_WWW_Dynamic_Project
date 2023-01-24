@@ -1,6 +1,8 @@
 # O projekcie
 
-Projekt to bardzo prosta strona służąca do „zarządzania lodówką”. Za jej pomocą możemy kontrolować jakie artykuły spożywcze znajdują się w naszej lodówce, do kiedy mają termin przydatności do spożycia itd…   # Przygotowanie do pierwszego uruchomienia
+Projekt to bardzo prosta strona służąca do „zarządzania lodówką”. Za jej pomocą możemy kontrolować jakie artykuły spożywcze znajdują się w naszej lodówce, do kiedy mają termin przydatności do spożycia itd…   
+
+# Przygotowanie do pierwszego uruchomienia
 
 ### Wymagania
 
