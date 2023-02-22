@@ -1,24 +1,25 @@
-# O projekcie
+# About the Project
 
-Projekt to bardzo prosta strona służąca do „zarządzania lodówką”. Za jej pomocą możemy kontrolować jakie artykuły spożywcze znajdują się w naszej lodówce, do kiedy mają termin przydatności do spożycia itd…   
+The project is a very simple website used for "managing the fridge". With its help, we can control what food products are in our fridge, when they expire, and more.
 
-# Przygotowanie do pierwszego uruchomienia
+# Preparing for the First Launch
 
-### Wymagania
+### Requirements
 
-Aby uruchomić projekt koniecznie jest posiadanie zainstalowanego środowiska `Node.js` oraz `mysql`.
+To run the project, it is necessary to have `Node.js` and `mysql` installed.
 
-### Baza danych
+### Database
 
-Aby możliwe było poprawne funkcjonowanie projektu konieczne jest utworzenie bazy danych o nazwie `freedgedb`. Konieczne może okazać się wprowadzenie hasła dla użytkownika `root` mysql wewnątrz `/backend/config/config.json`. Tworzenie tabel wewnątrz utworzonej bazy danych nie jest wymagane, ponieważ program zrobi to za nas. 
+To ensure the proper functioning of the project, it is necessary to create a database named `freedgedb`. It may be necessary to enter a password for the root mysql user inside `/backend/config/config.json`. Creating tables within the created database is not required, as the program will do it for us.
+
 ### Backend
- Kolejno przejdź do katalogu `/backend` w którym zainstaluj wymagane pakiety za pomocą komendy:
+Next, navigate to the `/backend` directory and install the required packages using the command:
 
 ```bash
 npm install
 ```
 
-Po zainstalowaniu pakietów użyj komendy :
+After installing the packages, use the command:
 
 ```bash
 npm start
@@ -26,13 +27,13 @@ npm start
 
 ### Frontend
 
-W analogiczny sposób należy postąpić w katalogu `/frontend`. Aby zainstalować wymagane pakiety użyj komendy:
+In a similar way, you should proceed in the `/frontend` directory. To install the required packages, use the command:
 
 ```bash
 npm install
 ```
 
-Po zainstalowaniu pakietów użyj komendy :
+After installing the packages, use the command:
 
 ```bash
 npm start
